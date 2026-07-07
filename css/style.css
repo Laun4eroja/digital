@@ -250,9 +250,25 @@ li {
     width: 200px;
     background-color: rgba(255, 255, 255, .7);
     padding: 15px 0;
+    transition: all .1s ease-in;
 }
 
 .categories__list-item.active {
+    border-color: #fff;
+    background-color: var(--main);
+    color: #fff;
+}
+
+.categories__list-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.categories__list-item.active:hover {
+    transform: none;
+    box-shadow: inherit;
     border-color: #fff;
     background-color: var(--main);
     color: #fff;
@@ -275,6 +291,13 @@ li {
     opacity: 1;
     transform: translateY(0);
     transition: all .4s ease-in;
+}
+
+.categories__card:hover {
+    transform: translateY(-3px);
+    transition: all .1s ease-in;
+
+
 }
 
 
@@ -672,6 +695,7 @@ li {
     .categories__list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .app__image {
         height: 600px;
         top: -45%;
@@ -704,14 +728,17 @@ li {
     .categories__card-name {
         font-size: 18px;
     }
+
     .app__title {
         max-width: 400px;
     }
+
     .app__btn img {
         max-width: 140px;
         border-radius: 10px;
     }
-        .app__image {
+
+    .app__image {
         height: 500px;
         top: -40%;
     }
@@ -743,7 +770,8 @@ li {
     .categories__top {
         margin-bottom: 40px;
     }
-            .app__image {
+
+    .app__image {
         height: 400px;
         top: -60%;
         left: 60%;
@@ -773,13 +801,16 @@ li {
     .categories__card-disc__tutu {
         font-size: 20px;
     }
+
     .app__title {
         max-width: 250px;
     }
+
     .app__btns {
         flex-direction: column;
         align-items: start;
     }
+
     .app__image {
         top: -35%;
     }
@@ -805,15 +836,19 @@ li {
     .section {
         padding: 60px 0;
     }
+
     .app__title {
         margin-bottom: 30px;
     }
+
     .app__image {
         height: 300px;
     }
+
     .app__btns {
         gap: 10px;
     }
+
     .app__btn img {
         max-width: 120px;
     }
@@ -823,6 +858,7 @@ li {
     .title {
         text-align: center;
     }
+
     .categories__list {
         margin-left: auto;
         margin-right: auto;
@@ -836,11 +872,17 @@ li {
         font-size: 18px;
         max-width: 170px;
     }
+
     .app__btns {
         flex-direction: row;
     }
+
     .app__image {
         top: -50%;
+    }
+
+    .app__title {
+        max-width: 450px;
     }
 }
 
@@ -860,6 +902,7 @@ li {
     .categories__card-name {
         font-size: 14px;
     }
+
     .app__image {
         height: 250px;
     }
