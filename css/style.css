@@ -672,6 +672,10 @@ li {
     .categories__list {
         grid-template-columns: repeat(2, 1fr);
     }
+    .app__image {
+        height: 600px;
+        top: -45%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -699,6 +703,17 @@ li {
 
     .categories__card-name {
         font-size: 18px;
+    }
+    .app__title {
+        max-width: 400px;
+    }
+    .app__btn img {
+        max-width: 140px;
+        border-radius: 10px;
+    }
+        .app__image {
+        height: 500px;
+        top: -40%;
     }
 }
 
@@ -728,6 +743,11 @@ li {
     .categories__top {
         margin-bottom: 40px;
     }
+            .app__image {
+        height: 400px;
+        top: -60%;
+        left: 60%;
+    }
 }
 
 @media (max-width: 720px) {
@@ -753,9 +773,19 @@ li {
     .categories__card-disc__tutu {
         font-size: 20px;
     }
+    .app__title {
+        max-width: 250px;
+    }
+    .app__btns {
+        flex-direction: column;
+        align-items: start;
+    }
+    .app__image {
+        top: -35%;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     .categories__card {
         max-width: 180px;
     }
@@ -775,9 +805,24 @@ li {
     .section {
         padding: 60px 0;
     }
+    .app__title {
+        margin-bottom: 30px;
+    }
+    .app__image {
+        height: 300px;
+    }
+    .app__btns {
+        gap: 10px;
+    }
+    .app__btn img {
+        max-width: 120px;
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+    .title {
+        text-align: center;
+    }
     .categories__list {
         margin-left: auto;
         margin-right: auto;
@@ -790,6 +835,12 @@ li {
     .categories__card-disc__tutu {
         font-size: 18px;
         max-width: 170px;
+    }
+    .app__btns {
+        flex-direction: row;
+    }
+    .app__image {
+        top: -50%;
     }
 }
 
@@ -808,5 +859,8 @@ li {
 
     .categories__card-name {
         font-size: 14px;
+    }
+    .app__image {
+        height: 250px;
     }
 }
