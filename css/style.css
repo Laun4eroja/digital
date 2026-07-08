@@ -994,10 +994,11 @@ li {
 
     .app__btns {
         flex-direction: row;
+        justify-content: center;
     }
 
     .app__image {
-        top: -50%;
+        top: -100%;
     }
 
     .app__title,
