@@ -997,15 +997,14 @@ li {
         justify-content: center;
     }
 
-    .app__image {
-        top: -100%;
-    }
-
     .app__title,
     .reviews__title {
         max-width: 450px;
     }
 
+    .app__image {
+        top: -170%;
+    }
 
 }
 
@@ -1025,9 +1024,5 @@ li {
 
     .categories__card-name {
         font-size: 14px;
-    }
-
-    .app__image {
-        height: 250px;
     }
 }
