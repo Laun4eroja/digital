@@ -1004,6 +1004,7 @@ li {
 
     .app__image {
         top: -170%;
+        left: 57%;
     }
 
 }
@@ -1025,4 +1026,29 @@ li {
     .categories__card-name {
         font-size: 14px;
     }
+}
+
+@media (hover: none), (pointer: coarse) {
+
+    .header__btn:hover,
+    .categories__list-item:hover,
+    .categories__card:hover,
+    .app__btn:hover,
+    .concierge__btn:hover,
+    .cta__btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .categories__list-item:hover {
+        border-color: var(--main);
+        color: inherit;
+    }
+
+    .categories__list-item.active:hover {
+        border-color: #fff;
+        background-color: var(--main);
+        color: #fff;
+    }
+
 }
